@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM with Interactive Map</title>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script>
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+    #controls {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <input type="text" id="searchQuery" placeholder="What are you looking for?" />
+    <button onclick="handleSearch()">Search</button>
+  </div>
+  <div id="map"></div>
+  <script src="script.js"></script>
+</body>
+</html>
